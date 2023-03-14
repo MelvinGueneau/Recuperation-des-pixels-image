@@ -1,28 +1,10 @@
-# Recuperation-des-pixels-image
+Récupérer les couleurs et les coordonnées d'un pixel d'une image en Python
 
+Ce programme Python utilise la bibliothèque PIL (Python Imaging Library) pour récupérer les couleurs et les coordonnées d'un pixel d'une image. Il permet également de stocker les couleurs et les coordonnées de tous les pixels d'une image dans une liste de dictionnaires.
 
-Programme de récupération de couleurs d'image
-Ce programme Python récupère les différentes couleurs d'une image et les stocke dans un dictionnaire Python. Il utilise la bibliothèque Python "Pillow" pour charger l'image et extraire les données de pixel.
+Le chemin d'accès à l'image vous sera demander. Le programme va créer une liste de dictionnaires, où chaque dictionnaire représente un pixel et contient deux clés : "couleur" et "coord", qui correspondent respectivement à la couleur et aux coordonnées x et y du pixel. La liste de pixels sera affichée à la fin de l'exécution du programme.
 
-Prérequis
-Python 3.x
-Pillow (installation avec pip : pip install pillow)
-Utilisation
-Clonez le dépôt ou téléchargez le fichier color_extractor.py.
-Ouvrez une invite de commande dans le répertoire où se trouve le fichier color_extractor.py.
-Exécutez la commande suivante : python color_extractor.py <chemin_vers_l'image>
-Exemple d'utilisation : python color_extractor.py my_image.png
-
-Le programme va afficher le dictionnaire contenant les couleurs et leur nombre d'occurrences dans l'image.
-
-Fonctionnement
-Le programme utilise la méthode getcolors() de la classe Image de la bibliothèque Pillow pour extraire toutes les couleurs de l'image. Les données sont stockées dans une liste de tuples (nombre d'occurrences, couleur) qui est triée en fonction du nombre d'occurrences. Enfin, les données sont stockées dans un dictionnaire où chaque clé est une couleur et chaque valeur est le nombre d'occurrences de cette couleur dans l'image.
-
-Limitations
-Le programme ne fonctionne qu'avec des images au format PNG, JPG ou BMP. Il n'a pas été testé avec des images contenant des transparences.
-
-Auteur
-Ce programme a été écrit par Melvin Gueneau.
+Ce programme permettra par la suite de nourrir un réseau neuronal qui définira si sur l'image c'est un chien ou un chat.
 
 Licence
-Ce programme est distribué sous la licence MIT. Veuillez vous référer au fichier LICENSE pour plus d'informations.
+Ce programme est sous licence MIT. Voir le fichier LICENSE pour plus d'informations.
